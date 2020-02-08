@@ -1,4 +1,4 @@
-from version import parse_version
+from versioning import parse_version
 
 
 def test_parse_line():
