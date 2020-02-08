@@ -1,5 +1,5 @@
-from setuptools import setup, find_packages
-from version import versioning
+from setuptools import setup
+from versioning import version
 
 
 with open('README.rst', 'r') as file:
@@ -10,9 +10,9 @@ package = 'versioning'
 setup(url='https://github.com/YoSTEALTH/versioning',
       name=package,
       author='STEALTH',
-      version=versioning(package),  # version number is auto generated.
-      packages=find_packages(),
-      description=('Software versioning based on auto generated year.month.day format.'),
+      version=version(package),  # version number is auto generated.
+      py_modules=['versioning'],
+      description=('Software versioning based on auto generated `year.month.day` as its format.'),
       python_requires='>=3.6',
       long_description=long_description,
       long_description_content_type="text/x-rst",
