@@ -1,41 +1,46 @@
-Versioning
-==========
-Software versioning based on auto generated year.month.day format.
+TODO:
+=====
+- Find a new name as someone already used versioning.
 
 
-Install, update & uninstall (Pre-Alpha)
----------------------------------------
-
-Use `pip`_ to install, upgrade & uninstall:
-
-.. code-block:: text
-
-    pip install versioning
-
-    pip install --upgrade versioning
-
-    pip uninstall versioning
+.. Versioning
+.. ==========
+.. Software versioning based on auto generated year.month.day format.
 
 
-Usage
------
+.. Install, update & uninstall (Pre-Alpha)
+.. ---------------------------------------
 
-setup.py
+.. Use `pip`_ to install, upgrade & uninstall:
 
-.. code-block:: python
+.. .. code-block:: text
+
+..     pip install versioning
+
+..     pip install --upgrade versioning
+
+..     pip uninstall versioning
+
+
+.. Usage
+.. -----
+
+.. setup.py
+
+.. .. code-block:: python
     
-    from version import versioning
+..     from versioning import version
 
-    setup(...,
-          setup_requires=['versioning'],
-          version=versioning('package_name'),
-          ...)
-
-
-License
--------
-Free, No limit what so ever. `Read more`_
+..     setup(...,
+..           setup_requires=['versioning'],
+..           version=version('package_name'),
+..           ...)
 
 
-.. _pip: https://pip.pypa.io/en/stable/quickstart/
-.. _Read more: https://github.com/YoSTEALTH/Versioning/blob/master/LICENSE.txt
+.. License
+.. -------
+.. Free, No limit what so ever. `Read more`_
+
+
+.. .. _pip: https://pip.pypa.io/en/stable/quickstart/
+.. .. _Read more: https://github.com/YoSTEALTH/Versioning/blob/master/LICENSE.txt
