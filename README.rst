@@ -17,23 +17,8 @@ Use `pip`_ to install, upgrade & uninstall:
     pip uninstall datestamp
 
 
-Example-1
----------
-
-.. code-block:: python
-    
-    # ./setup.py
-    from datestamp import stamp
-
-    setup(...,
-          setup_requires=['datestamp'],
-          version=stamp('package_name'),            # '2020.2.9'
-          # version=stamp('package_name', 'rc1'),   # '2020.2.9rc1'
-          ...)
-
-
-Example-2
----------
+Example
+-------
 
 .. code-block:: python
     
@@ -45,15 +30,17 @@ Example-2
     from datestamp import stamp
 
     setup(...,
-          version=stamp('package_name'),            # '2020.2.9'
-          # version=stamp('package_name', 'rc1'),   # '2020.2.9rc1'
+          version=stamp('package_name'),                # '2020.2.9'
+          # version=stamp('package_name', '.post1'),    # '2020.2.9.post1'
+          # version=stamp('package_name', 'rc1'),       # '2020.2.9rc1'
           ...)
 
 
 Note
 ----
-    - Make sure to pre-install ``datestamp`` before running ``python3 setup.py ...``. This is only required for publishers, for users it will be auto installed through ``setup_requires=['datestamp']``
-    - New version stamp is only generated when you are ready to publish your project by
+
+    - Make sure to pre-install ``datestamp`` before running ``python3 setup.py ...``. This is only required for publishers, for users it will be build at setup time (but not installed) through ``[build-system]``
+    - New date stamp is only generated when you are ready to publish your project by
       ``python3 setup.py sdist`` or current version date is used.
     - When new date is generated at ``setup(version=stamp(...))`` it also replaces ``__version__`` line with ``__version__ = '2020.2.9'`` in ``__init__.py`` file.
     - Works for One-Off script file as well like ``datestamp.py`` package itself.
