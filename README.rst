@@ -1,6 +1,6 @@
 DateStamp
 ===========
-Automatically generates new software version number as `year.month.day` format.
+Automatically generates new software version number as ``year.month.day`` format.
 
 
 Install, update & uninstall (Alpha)
