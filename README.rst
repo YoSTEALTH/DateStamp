@@ -35,7 +35,7 @@ Usage
 Note
 ----
     - New version stamp is only generated when you are ready to publish your project by
-      ``python3 setup.py sdist`` or else current version date is used.
+      ``python3 setup.py sdist`` or current version date is used.
     - When new date is generated at ``setup(version=stamp(...))`` it also replaces ``__version__`` line with ``__version__ = '2020.2.9'`` in ``__init__.py`` file.
     - Works for One-Off script file as well like ``datestamp`` package itself.
 
