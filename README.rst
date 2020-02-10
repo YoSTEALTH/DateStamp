@@ -40,7 +40,7 @@ Example #2
 .. code-block:: python
     
     # ./datestamp.py
-    # ...
+    ...
 
     # ./MANIFEST.in
     include datestamp.py
@@ -66,12 +66,11 @@ Options
 Note
 ----
 
-    - Make sure to pre-install ``datestamp`` before running ``python3 setup.py ...``. This is only required for publishers, for users it will be build at setup time (but not installed) through ``[build-system]``
+    - Make sure to pre-install ``datestamp`` before running ``python3 setup.py sdist``. This is only required for publishers, for users it will be build at setup time (but not installed).
     - New date stamp is only generated when you are ready to publish your project by
       ``python3 setup.py sdist`` or current version date is used.
     - When new date is generated at ``setup(version=stamp(...))`` it also replaces ``__version__`` line with ``__version__ = '2020.2.9'`` in ``__init__.py`` file.
     - Works for One-Off script file as well like ``datestamp.py`` package itself.
-    - If for some reason you can't pre-install ``datestamp`` you can include ``datestamp.py`` file besides your ``setup.py`` and import it that way. Also don't forget to ``include datestamp.py`` in ``MANIFEST.in`` if you know the user installing your package does not have access internet access.
 
 
 License
