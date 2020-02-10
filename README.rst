@@ -24,7 +24,7 @@ Example #1
     
     # ./pyproject.toml
     [build-system]
-    requires = ["datestamp"]
+    requires = [..., "datestamp"]
 
     # ./setup.py
     from datestamp import stamp
