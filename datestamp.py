@@ -3,7 +3,7 @@ import time
 import os.path
 
 __all__ = ('parse_version', 'stamp')
-__version__ = '2020.2.9.post1'
+__version__ = '2020.2.10'
 
 
 def parse_version(line):
