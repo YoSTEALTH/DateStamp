@@ -46,7 +46,6 @@ def stamp(package, revision=''):
             >>> from datestamp import stamp
             ...
             >>> setup(...,
-            >>>       setup_requires=['datestamp'],
             >>>       version=stamp('mylib'),
             >>>       ...)
 
