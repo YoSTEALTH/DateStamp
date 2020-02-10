@@ -17,8 +17,8 @@ Use `pip`_ to install, upgrade & uninstall:
     pip uninstall datestamp
 
 
-Example-1
----------
+Example #1
+----------
 
 .. code-block:: python
     
@@ -34,8 +34,8 @@ Example-1
           ...)
 
 
-Example-2
----------
+Example #2
+----------
 
 .. code-block:: python
     
