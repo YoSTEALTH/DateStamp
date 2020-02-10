@@ -17,29 +17,36 @@ Use `pip`_ to install, upgrade & uninstall:
     pip uninstall datestamp
 
 
-Usage
------
-
-./setup.py
+Example-1
+---------
 
 .. code-block:: python
     
-    # Option-1
-    # --------
+    # ./setup.py
     from datestamp import stamp
 
     setup(...,
           setup_requires=['datestamp'],
-          version=stamp('package_name'),  # '2020.2.9'
+          version=stamp('package_name'),            # '2020.2.9'
+          # version=stamp('package_name', 'rc1'),   # '2020.2.9rc1'
           ...)
 
-    # Option-2
-    # --------
+
+Example-2
+---------
+
+.. code-block:: python
+    
+    # ./pyproject.toml
+    [build-system]
+    requires = ["datestamp"]
+
+    # ./setup.py
     from datestamp import stamp
 
     setup(...,
-          setup_requires=['datestamp'],
-          version=stamp('package_name', 'v1'),  # '2020.2.9v1'
+          version=stamp('package_name'),            # '2020.2.9'
+          # version=stamp('package_name', 'rc1'),   # '2020.2.9rc1'
           ...)
 
 
