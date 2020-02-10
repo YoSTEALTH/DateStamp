@@ -17,8 +17,8 @@ Use `pip`_ to install, upgrade & uninstall:
     pip uninstall datestamp
 
 
-Example
--------
+Example-1
+---------
 
 .. code-block:: python
     
@@ -30,10 +30,37 @@ Example
     from datestamp import stamp
 
     setup(...,
-          version=stamp('package_name'),                # '2020.2.9'
-          # version=stamp('package_name', '.post1'),    # '2020.2.9.post1'
-          # version=stamp('package_name', 'rc1'),       # '2020.2.9rc1'
+          version=stamp('package_name'),    # '2020.2.9'
           ...)
+
+
+Example-2
+---------
+
+.. code-block:: python
+    
+    # ./datestamp.py
+    # ...
+
+    # ./MANIFEST.in
+    include datestamp.py
+
+    # ./setup.py
+    from datestamp import stamp
+
+    setup(...,
+          version=stamp('package_name'),    # '2020.2.9'
+          ...)
+
+
+Options
+-------
+
+.. code-block:: python
+
+    version=stamp('package_name')               # '2020.2.9'
+    version=stamp('package_name', '.post1')     # '2020.2.9.post1'
+    version=stamp('package_name', 'rc1')        # '2020.2.9rc1'
 
 
 Note
@@ -44,7 +71,7 @@ Note
       ``python3 setup.py sdist`` or current version date is used.
     - When new date is generated at ``setup(version=stamp(...))`` it also replaces ``__version__`` line with ``__version__ = '2020.2.9'`` in ``__init__.py`` file.
     - Works for One-Off script file as well like ``datestamp.py`` package itself.
-    - If for some reason you can't pre-install ``datestamp`` you can include ``datestamp.py`` file besides your ``setup.py`` and import it that way. Also don't forget to ``include datestamp.py`` in ``MANIFEST.in`` if you know the user installing your package does not have access t
+    - If for some reason you can't pre-install ``datestamp`` you can include ``datestamp.py`` file besides your ``setup.py`` and import it that way. Also don't forget to ``include datestamp.py`` in ``MANIFEST.in`` if you know the user installing your package does not have access internet access.
 
 
 License
