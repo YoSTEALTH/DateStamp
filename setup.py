@@ -1,26 +1,27 @@
 from setuptools import setup
-from versioning import version
+from datestamp import stamp
 
 
 with open('README.rst', 'r') as file:
     long_description = file.read()
 
-package = 'versioning'
+package = 'datestamp'
 
-setup(url='https://github.com/YoSTEALTH/versioning',
+setup(url='https://github.com/YoSTEALTH/datestamp',
       name=package,
       author='STEALTH',
-      version=version(package),  # version number is auto generated.
-      py_modules=['versioning'],
-      description=('Software versioning based on auto generated `year.month.day` as its format.'),
+      version=stamp(package),  # version number is auto generated.
+      py_modules=[package],
+      description=('Automated software version generator and replacer based on `year.month.day`'
+                   ' as its format.'),
       python_requires='>=3.6',
       long_description=long_description,
       long_description_content_type="text/x-rst",
       classifiers=['License :: Public Domain',
                    'Intended Audience :: Developers',
                    # 'Development Status :: 1 - Planning',
-                   'Development Status :: 2 - Pre-Alpha',
-                   # 'Development Status :: 3 - Alpha',
+                   # 'Development Status :: 2 - Pre-Alpha',
+                   'Development Status :: 3 - Alpha',
                    # 'Development Status :: 4 - Beta',
                    # 'Development Status :: 5 - Production/Stable',
                    # 'Development Status :: 6 - Mature',

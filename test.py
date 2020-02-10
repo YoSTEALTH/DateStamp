@@ -1,4 +1,4 @@
-from versioning import parse_version
+from datestamp import parse_version
 
 
 def test_parse_line():
@@ -12,5 +12,5 @@ def test_parse_line():
 
 
 # TODO
-# def test_versioning():
+# def test_stamp():
 #     ...
