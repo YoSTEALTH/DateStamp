@@ -1,6 +1,6 @@
 DateStamp
 ===========
-Automatically generates new software version number as ``year.month.day`` format.
+Automatically generates new software version stamp as ``year.month.day`` format.
 
 
 Install, update & uninstall (Alpha)
@@ -31,12 +31,11 @@ Usage
           version=stamp('package_name'),
           ...)
 
-    # new version is only generated when you:
-    # python3 setup.py sdist
-
 
 Note
 ----
+    - New version stamp is only generated when you are ready to publish your project by
+      ``python3 setup.py sdist`` or else current version date is used.
     - When new date is generated at ``setup(version=stamp(...))`` it also replaces ``__version__`` line with ``__version__ = '2020.2.9'`` in ``__init__.py`` file.
     - Works for One-Off script file as well like ``datestamp`` package itself.
 
