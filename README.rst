@@ -84,8 +84,8 @@ Free, No limit what so ever. `Read more`_
 
 TODO
 ----
-[ ] detect when `bdist_wheel` is being called to create new date stamp
-[ ] chance license to CC-0
-[ ] create wheel build to support all systems including windows and mac.
-[ ] write test for `stamp()` function
-[ ] look into `replace` and `version_only` for new `stamp()` function and implement it.
+- [ ] detect when `bdist_wheel` is being called to create new date stamp
+- [ ] chance license to CC-0
+- [ ] create wheel build to support all systems including windows and mac.
+- [ ] write test for `stamp()` function
+- [ ] look into `replace` and `version_only` for new `stamp()` function and implement it.
