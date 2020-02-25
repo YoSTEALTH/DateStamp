@@ -17,8 +17,8 @@ Use `pip`_ to install, upgrade & uninstall:
     pip uninstall datestamp
 
 
-Example #1
-----------
+Usage #1
+--------
 
 .. code-block:: python
     
@@ -34,8 +34,8 @@ Example #1
           ...)
 
 
-Example #2
-----------
+Usage #2
+--------
 
 .. code-block:: python
     
@@ -75,7 +75,7 @@ Note
 
 License
 -------
-Free, No limit what so ever. `Read more`_
+Free, Public Domain (CC0). `Read more`_
 
 
 .. _pip: https://pip.pypa.io/en/stable/quickstart/
@@ -84,8 +84,7 @@ Free, No limit what so ever. `Read more`_
 
 TODO
 ----
-- [ ] detect when `bdist_wheel` is being called to create new date stamp
-- [ ] chance license to CC-0
-- [ ] create wheel build to support all systems including windows and mac.
-- [ ] write test for `stamp()` function
-- [ ] look into `replace` and `version_only` for new `stamp()` function and implement it.
+    - [ ] detect when `bdist_wheel` is being called to create new date stamp
+    - [ ] create wheel build to support all systems including windows and mac.
+    - [ ] write test for `stamp()` function
+    - [ ] look into `replace` and `version_only` for new `stamp()` function and implement it.
